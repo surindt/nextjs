@@ -1,0 +1,155 @@
+/**
+ * @license
+ *
+ * Font Family: Neco
+ * Designed by: Jitka Janečková
+ * URL: https://www.fontshare.com/fonts/neco
+ * © 2021 Indian Type Foundry
+ *
+ * Font Styles:
+ * Neco Variable(Variable font)
+ * Neco Variable Italic(Variable font)
+ * Neco Regular
+ * Neco Italic
+ * Neco Medium
+ * Neco Medium Italic
+ * Neco Bold
+ * Neco Bold Italic
+ * Neco Black
+ * Neco Black Italic
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 400.0 to 900.0)
+
+*/
+
+@font-face {
+    font-family: 'Neco-Variable';
+    src: url('../public/fonts/neco/Neco-Variable.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-Variable.woff') format('woff'),
+         url('../public/fonts/neco/Neco-Variable.ttf') format('truetype');
+         font-weight: 400 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  /**
+  * This is a variable font
+  * You can controll variable axes as shown below:
+  * font-variation-settings: 'wght' 900.0;
+  *
+  * available axes:
+  
+  * 'wght' (range from 400.0 to 900.0)
+  
+  */
+  
+  @font-face {
+    font-family: 'Neco-VariableItalic';
+    src: url('../public/fonts/neco/Neco-VariableItalic.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-VariableItalic.woff') format('woff'),
+         url('../public/fonts/neco/Neco-VariableItalic.ttf') format('truetype');
+         font-weight: 400 900;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Neco-Regular';
+    src: url('../public/fonts/neco/Neco-Regular.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-Regular.woff') format('woff'),
+         url('../public/fonts/neco/Neco-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Neco-Italic';
+    src: url('../public/fonts/neco/Neco-Italic.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-Italic.woff') format('woff'),
+         url('../public/fonts/neco/Neco-Italic.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Neco-Medium';
+    src: url('../public/fonts/neco/Neco-Medium.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-Medium.woff') format('woff'),
+         url('../public/fonts/neco/Neco-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Neco-MediumItalic';
+    src: url('../public/fonts/neco/Neco-MediumItalic.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-MediumItalic.woff') format('woff'),
+         url('../public/fonts/neco/Neco-MediumItalic.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Neco-Bold';
+    src: url('../public/fonts/neco/Neco-Bold.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-Bold.woff') format('woff'),
+         url('../public/fonts/neco/Neco-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Neco-BoldItalic';
+    src: url('../public/fonts/neco/Neco-BoldItalic.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-BoldItalic.woff') format('woff'),
+         url('../public/fonts/neco/Neco-BoldItalic.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Neco-Black';
+    src: url('../public/fonts/neco/Neco-Black.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-Black.woff') format('woff'),
+         url('../public/fonts/neco/Neco-Black.ttf') format('truetype');
+         font-weight: 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Neco-BlackItalic';
+    src: url('../public/fonts/neco/Neco-BlackItalic.woff2') format('woff2'),
+         url('../public/fonts/neco/Neco-BlackItalic.woff') format('woff'),
+         url('../public/fonts/neco/Neco-BlackItalic.ttf') format('truetype');
+         font-weight: 900;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  

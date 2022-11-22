@@ -1,0 +1,43 @@
+.firstLetter_studio, .secondLetter_studio, .thirdLetter_studio{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -15px;
+    font-family: 'Neco-Medium';
+}
+.secondLetter_studio{
+    font-size: 0.942em;
+    font-family: 'Neco-MediumItalic';
+  }
+.thirdLetter_studio{
+    font-size: 0.7857em;
+    font-family: 'CabinetGrotesk-Extrabold';
+  }
+
+  .lettersPosts_studio{
+    width: 100%;
+    font-size: 70px;
+  }
+
+/*    Ipad   */
+@media only screen and (max-width: 1190px) {
+  .lettersPosts_studio{
+    font-size: 50px;
+  }
+  .firstLetter_studio, .secondLetter_studio, .thirdLetter_studio{
+    margin-bottom: -5px;
+  }
+}
+
+
+
+/*    Mobile   */
+
+@media only screen and (max-width: 800px) {
+    .firstLetter_studio, .secondLetter_studio, .thirdLetter_studio{
+      justify-content: center;
+      margin-bottom: 0px;
+    }
+    .lettersPosts_studio{
+        font-size: 20px;
+    }
+  }

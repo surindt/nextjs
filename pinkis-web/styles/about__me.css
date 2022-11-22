@@ -1,0 +1,109 @@
+.lettersPosts_about__me{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.firstblock__aboutme, .secondblock__aboutme, .thirdblock__aboutme, .fourthblock__aboutme{
+    float: left;
+    width: auto;
+    max-width: 890px;
+}
+.firstblock__aboutme{
+    line-height: 130%;
+}
+.secondblock__aboutme{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.lettersPosts_about__me span{
+    display: inline-block;
+}
+.img__about__me{
+    display: inline-block;
+    
+}
+.img__hola{
+    background: url("../public/images/SOBREMI/1.jpeg") center no-repeat;
+    background-size: 90px;
+    border-radius: 30px;
+    width: 62.69px;
+    height: 43px;
+}
+.img__hora{
+    background: url("../public/images/SOBREMI/3.PNG") center no-repeat;
+    width: 43px;
+    height: 43px;
+    border-radius: 43px;
+    background-size: 50px;
+    
+}
+.img__victoria{
+    background: url("../public/images/SOBREMI/2.png") center no-repeat;
+    background-size: 60px;
+    border-radius: 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.about__me_inline{
+    display: inline-block;
+}
+
+.contacto__about_me{
+    display: none;
+}
+
+/*    Ipad   */
+
+@media only screen and (max-width: 1190px) {
+    .lettersPosts_services{
+        font-size: 30px;
+    }
+}
+
+
+/*    Mobile   */
+
+@media only screen and (max-width: 800px) {
+    .lettersPosts_about__me{
+        font-size: 15px;
+    }
+    .firstblock__aboutme, .secondblock__aboutme, .thirdblock__aboutme, .fourthblock__aboutme, .contacto__about_me{
+        width: auto;
+        max-width: 400px;
+    }
+    .firstblock__aboutme{
+        line-height: 130%;
+    }
+    .secondblock__aboutme{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .img__hola{
+        background-size: 40px;
+        border-radius: 10px;
+        width: 31.34px;
+        height: 21.5px;
+    }
+    .img__hora{
+        width: 21.5px;
+        height: 21.5px;
+        border-radius: 21.5px;
+        background-size: 24px;
+    }
+    .img__victoria{
+        background-size: 30px;
+        border-radius: 0px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .contacto__about_me{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 9px;
+        padding-top: 30px;
+    }
+    
+}

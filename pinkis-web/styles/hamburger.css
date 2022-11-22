@@ -1,0 +1,270 @@
+/*    Recursos   */
+
+.container__hamb{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.hamburger span, .hamburger span::after{
+    content: '';
+    display: block;
+    width: 38px;
+    height: 4px;
+    background-color: #404040;
+    border-radius: 3px;
+    transform: rotate(45deg);
+
+}
+.hamburger span::after{
+    transform: rotate(90deg);
+}
+
+.base__logotipo{
+    width: 140px;
+    height:100px;
+}
+.logotipo__loading{
+    width: 140px;
+    height:100px;
+    background: url(../public/images/Logotipo.svg) no-repeat center;
+    background-size: 138px;
+    animation-name: header__logo;
+    animation-duration: 1.5s;
+    animation-timing-function: linear; 
+}
+.logotipo__complete{
+    width: 140px;
+    height:100px;
+    background: url(../public/images/Logotipo.svg) no-repeat center;
+    background-size: 138px;
+}
+
+/* .logotipoP{
+    content: '';
+    position: absolute;
+    width: 614px;
+    height: 317.38px;
+    background-size: 613px;
+    margin-left: -230px;
+    margin-top: 20vh;
+    animation-name: header__logo;
+    animation-duration: 1s;
+    animation-timing-function: linear; 
+} */
+
+@keyframes header__logo{
+    0%{
+        position: absolute;
+        width: 614px;
+        height: 317.38px;
+        background-size: 613px;
+        margin-left: -230px;
+        margin-top: 30vh;    
+    }
+    50% {
+        position: absolute;
+        width: 614px;
+        height: 317.38px;
+        background-size: 613px;
+        margin-left: -230px;
+        margin-top: 30vh;   
+           
+    }
+    100% {
+        width: 140px;
+        height:100px;
+        background-size: 138px;
+        position: absolute;
+        z-index: 20;
+        margin-left: 0;
+        margin-top: 0; 
+    }
+  }
+
+ 
+.container__menu_three{
+    padding-top: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.three__lines__complete span, .three__lines__complete span::after, .three__lines__complete span::before{
+    content: '';
+    display: block;
+    width: 34px;
+    height: 4px;
+    background-color: #404040;
+    border-radius: 0px
+}
+.three__lines__complete span::after{
+    transform: translateY(5px);
+}
+.three__lines__complete span::before{
+    transform: translateY(-9.5px);
+}
+.three__lines__loading{
+    animation-name: header__hamburger;
+    animation-duration: 1.1s;
+    animation-timing-function: linear;  
+}
+@keyframes header__hamburguer{
+    0%{
+        background-color: #F7EFE7;
+    }
+    70% {
+        background-color: #F7EFE7;
+        
+    }
+    100% {
+        background-color: #404040;
+    }
+  }
+
+/* Si scroll entonces elimina el keyframe */
+
+@media only screen and (max-width: 1000px) {
+   
+@keyframes header__logo{
+    0%{
+        position: absolute;
+        width: 614px;
+        height: 317.38px;
+        background-size: 613px;
+        margin-left: -30vw;
+        margin-top: 30vh;    
+    }
+    50% {
+        position: absolute;
+        width: 614px;
+        height: 317.38px;
+        background-size: 613px;
+        margin-left: -30vw;
+        margin-top: 30vh;   
+           
+    }
+    100% {
+        width: 140px;
+        height:100px;
+        background-size: 138px;
+        position: absolute;
+        z-index: 20;
+        margin-left: 0;
+        margin-top: 0; 
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+    .logo__hamburger{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logotipo, .logotipo__complete{
+        width: 94px;
+        height: 60px;
+        background-size: 122px;
+    }
+
+    
+    
+    .base__logotipo{
+        width: 94px;
+        height: 60px;
+    }
+
+    .logotipo__loading{
+        width: 140px;
+        height:100px;
+        background: url(../public/images/Logotipo.svg) no-repeat center;
+        background-size: 138px;
+        animation-name: header__logo;
+        animation-duration: 1.5s;
+        animation-timing-function: linear; 
+    }
+    .logotipo__complete{
+        width: 140px;
+        height:100px;
+        background: url(../public/images/Logotipo.svg) no-repeat center;
+        background-size: 138px;
+    }
+    
+    /* .logotipoP{
+        content: '';
+        position: absolute;
+        width: 614px;
+        height: 317.38px;
+        background-size: 613px;
+        margin-left: -230px;
+        margin-top: 20vh;
+        animation-name: header__logo;
+        animation-duration: 1s;
+        animation-timing-function: linear; 
+    } */
+    
+    @keyframes header__logo{
+        0%{
+            position: absolute;
+            width: 251px;
+            height: 130px;
+            background-size: 250px;
+            margin-left: 20vw;
+            margin-top: 35vh;    
+        }
+        50% {
+            position: absolute;
+            width: 251px;
+            height: 130px;
+            background-size: 250px;
+            margin-left: 20vw;
+            margin-top: 35vh;   
+               
+        }
+        100% {
+            width: 140px;
+            height:100px;
+            background-size: 138px;
+            position: absolute;
+            z-index: 20;
+            margin-left: 0;
+            margin-top: 0; 
+        }
+      }
+}
+
+@media only screen and (max-width: 500px) {
+    @keyframes header__logo{
+        0%{
+            position: absolute;
+            width: 251px;
+            height: 130px;
+            background-size: 250px;
+            margin-left: 13vw;
+            margin-top: 35vh;    
+        }
+        50% {
+            position: absolute;
+            width: 251px;
+            height: 130px;
+            background-size: 250px;
+            margin-left: 13vw;
+            margin-top: 35vh;   
+               
+        }
+        100% {
+            width: 140px;
+            height:100px;
+            background-size: 138px;
+            position: absolute;
+            z-index: 20;
+            margin-left: 0;
+            margin-top: 0; 
+        }
+    }
+}
