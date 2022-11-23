@@ -17,8 +17,6 @@ export default function Home() {
   const [currentScrollY, setOffset] = useState(0);
   const [loadBoolean, setLoad] = useState("loading");
   const [windowResize, setResize] = useState(0);
-  const [windowOverscroll, setWindowOver] = useState(false);
-  
   const windowWidth = useRef(0);
 
 
@@ -43,9 +41,6 @@ export default function Home() {
   const handleWindowResize = () => {
     setResize(() => {window.innerWidth});
   }
-  const Resize = () =>{
-    windowWidth.current = window.innerWidth;
-  }
   useEffect(()=>{
     fetch("").then( () => {
         handleWindowResize;
@@ -64,6 +59,7 @@ export default function Home() {
   
   useEffect(() => {
    window.addEventListener('resize',handleWindowResize);
+   windowWidth.current = window.innerWidth;
    console.log(window.innerWidth);
     return () => {
       window.removeEventListener('resize', handleWindowResize);
@@ -73,12 +69,12 @@ export default function Home() {
   
  
     return(
-      <main className={'screen'+windowOverscroll}>
+      <main>
       <Head>
       <title>Victoria Itzayana</title>
       <meta name='Victoria Itzayana'></meta>
-      <meta content='branding marketing creatividad'></meta>
-
+      <meta content='branding marketing creatividad estiliza tus ideas'></meta>
+      <link rel='icon' href="https://public-files.gumroad.com/variants/8tpq4yscoc3c4pm4nlypvaa9q2vx/5030a33736a33fff939ce6d9f843d748f92b33eecdff51020ac02c0e90bcdaad" type = "image/x-icon" /> public/images/SOBREMI/1.jpeg
       </Head>
       <div className="container__princ" onLoad={() => handleLoad} onScroll={() => handleScroll}>
           <Navbar goingUp={goingUp} load ={loadBoolean} />
